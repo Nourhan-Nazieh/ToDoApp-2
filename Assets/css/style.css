@@ -1,0 +1,279 @@
+
+*{
+  transition: all .3s;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background: url(../imag/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+.welcome{
+  font-family: "Kalam", cursive;
+  color: #dfd4eb;
+  text-shadow : 3px 2px 4px rgb(59, 43, 110);
+  text-align: center;
+  position: absolute;
+  top: 95px;
+  box-shadow: 0 0 10px rgba(175, 178, 247, 0.944);
+  border-bottom:rgb(116, 98, 208) solid 3px ;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+
+}
+
+
+.enimation{
+width: 30%;
+position: absolute;
+top:0px;
+left: 20px;
+}
+
+
+h1{
+
+  padding-top: 20px;
+  font-family: "Kalam", cursive;
+  text-shadow : 3px 2px 4px rgb(231, 218, 195);
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+
+
+.container {
+  width: 450px;
+  height: auto;
+  min-height: 400px;
+  padding: 30px;
+  margin: auto;
+  background: transparent;
+  border: 2px solid #615dd4c6;
+  text-shadow : 3px 2px 4px rgba(158, 156, 151, 0.642);
+  box-shadow: 0 0 10px rgb(187, 186, 237);    
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+h1 {
+  color: #66236a;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  flex: 1;
+  outline: none;
+  padding: 10px 10px 10px 20px;
+  background-color: transparent;
+  border: 2px solid #3d0b43a1;
+  border-radius: 30px;
+  color: #082068;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #cdc9e554;
+  box-shadow: 0 0 10px rgb(187, 186, 237);    
+
+
+}
+
+.todo-input::placeholder {
+  color: #836363ca;
+}
+
+
+.add-button {
+  border: none;
+  outline: none;
+  background: #852e54a1;
+  color: #ffe2e2a2;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.empty-image {
+  margin: 55px auto 0;
+  display: block;
+}
+
+.todo {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7d428bd4;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 2px solid #feb392e8;
+  transition: all 0.2s ease;
+}
+
+.todo:first-child {
+  margin-top: 0;
+}
+
+.todo:last-child {
+  margin-bottom: 0;
+}
+
+.todo:hover {
+  background-color:#8fb355a1;
+}
+
+.todo label {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+}
+
+.todo span {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+span::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-left: -30px;
+  border-radius: 100px;
+  border: 2px solid #e6b7eca1;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+}
+
+input:checked + span {
+  text-decoration: line-through
+}
+
+.todo:hover input:checked + span::before, input:checked + span::before {
+  background: url(../imag/check.svg ) 50% 50% no-repeat #189f2acb;
+  border-color: #09bb21;
+}
+
+.todo:hover span::before {
+  border-color: #eee;
+}
+
+.todo .delete-btn  {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #eee;
+  font-size: 24px;
+}
+
+.todos-container  {
+  height: 300px;
+  overflow: overlay;
+}
+
+.todos-container::-webkit-scrollbar-track  {
+  background: rgb(247, 247, 247);
+  border-radius: 20px
+}
+
+
+.todos-container::-webkit-scrollbar-thumb  {
+  background: #682121;
+  border-radius: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.filter {
+  color: #e8dfda;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 100px;
+  border: 2px solid #7e2253a1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.filter.active, .filter:hover {
+  background-color: #9bbd45c9;
+}
+
+.delete-all {
+  display: flex;
+  color: #881313;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-all:hover {
+  border-radius: 5px;
+  background-color: #aa1b5ec4;
+}
+
+
+
+/* Theem */
+
+body .lightMood {
+  cursor: pointer;
+  text-shadow: 10px 10px 10px rgb(192, 171, 139);
+  font-size: 30px;
+  transition: all 1s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+body.light-theme {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./Assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/icon/all.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="icon" href="Assets/imag/sticky-note.png">
+</head>
+
+<body class="light-theme"> 
+  <div class="lightMood">
+    <i class="fa-solid fa-cloud-moon"></i> Theme
+  </div>
+  <div class="welcome">
+    <h5>Welcome to ToDo-App by JS... <br> Achieve Your Goals – You Can Do It</h5>
+  </div>
+
+  <div class="container">
+    <div>
+      <h1>
+        <iframe class="enimation" src="https://lottie.host/embed/251de48c-0791-487d-ae97-8651cc150ffa/HkHkCzNqbW.json"></iframe>Y-Todo List
+      </h1>
+    </div>
+
+    <div class="input-container"> 
+      <input class="todo-input" placeholder="Add a new task...">
+      <button class="add-button">
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+
+    <div class="filters">
+      <div class="filter btn btn-outline-success" data-filter="completed">Completed</div>
+      <div class="filter btn btn-outline-warning" data-filter="pending">Pending</div>
+      <div class="delete-all btn btn-outline-danger">Delete All</div>
+    </div>
+
+    <div class="todos-container">
+      <ul class="todos"></ul>
+      <img class="empty-image" src="imag/empty.svg" alt="">
+    </div>
+  </div>
+
+<script src="Assets/js/all.min.js"></script>
+<script src="Assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="Assets/js/main.js"></script>
+
+</body>
+
+</html>
